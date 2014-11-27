@@ -1,0 +1,20 @@
+<ons-navigator var="myNavigator">
+	<ons-page>
+		<ons-toolbar fixed-style>
+			<div class="left">
+				<ons-toolbar-button ng-click="mySlidingMenu.toggle()">
+					<ons-icon icon="fa fa-bars"></ons-icon>
+				</ons-toolbar-button>
+			</div>
+			<div class="center">My App</div>
+		</ons-toolbar>
+
+		<ons-list>
+			<ons-list-item ng-repeat="item in items" ng-click="showItem($index);">
+				<ons-row>
+					{{item.name}}
+				</ons-row>
+			</ons-list-item>
+		</ons-list>
+	</ons-page>
+</ons-navigator>

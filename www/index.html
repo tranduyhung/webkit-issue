@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=medium-dpi" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<title>My App</title>
+
+		<link rel="stylesheet" type="text/css" href="css/onsenui.css">
+		<link rel="stylesheet" type="text/css" href="css/onsen-css-components-default.css">
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/onsenui.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body ng-app="myApp" ng-controller="myController">
+		<ons-sliding-menu class="sliding-menu" var="mySlidingMenu" main-page="items.html" menu-page="menu.html" max-slide-distance="200px" type="reveal" side="left"></ons-sliding-menu>
+	</body>
+</html>
